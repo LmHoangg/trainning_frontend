@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input {
+  border: none;
+  font-size: 25px;
+  text-align: left;
+  width: 100%;
+}
+.wrapper {
+  margin: 100px auto;
+  width: 600px;
+  text-align: center;
+  background-color: #cccc;
+  border-radius: 10px;
+  font-family: var(--font-main);
+}
+.title-form {
+  font-size: 40px;
+  padding-top: 10px;
+  color: red;
+}
+.table {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 25px;
+}
+.table,
+.table tr,
+.table td {
+  border: 10px solid transparent;
+}
+.table td {
+  text-align: left;
+}
+.btn {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.btn-submit {
+  background-color: rgb(42, 94, 236);
+  color: white;
+  padding: 10px 20px;
+  flex: 1;
+  text-align: center;
+}
+.btn-reset {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  flex: 1;
+  text-align: center;
+}
+.error {
+  color: red;
+  font-size: 18px;
+}
