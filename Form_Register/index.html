@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="title-form">Đăng ký thành viên</h1>
+      <form name="myForm" onsubmit="return Validate();">
+        <table class="table">
+          <tr>
+            <td>Họ tên <span class="error error-name">*</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="username" id="username" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mật khẩu <span class="error error-pass">*</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="pass" id="password" />
+            </td>
+          </tr>
+          <tr>
+            <td>Email <span class="error error-email">*</span></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="email" name="email" id="email" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="btn">
+                <input type="submit" value="Đăng ký" class="btn-submit" />
+                <input type="reset" value="Xoá" class="btn-reset" />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
