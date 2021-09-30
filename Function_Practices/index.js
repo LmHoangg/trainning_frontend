@@ -11,7 +11,7 @@ const randInt = (start, end) => {
 
 const getRandomMark = (start, end, step) => {
   if (start > end) {
-    var tg = start;
+    const tg = start;
     start = end;
     end = tg;
   }
@@ -35,7 +35,7 @@ console.log(getRandomMark(6, 10, 0.5));
 
 const generateStudentMark = (name) => {
   return {
-    name: `${name}`,
+    name,
     marks: {
       literature: getRandomMark(0, 10, 0.25),
       maths: getRandomMark(0, 10, 0.25),
@@ -76,8 +76,8 @@ const gpa = (obj1, obj2) => {
   for (const key in obj1) {
     for (const key2 in obj2) {
       if (key === key2) {
-        total += obj1[`${key}`] * obj2[`${key2}`];
-        totalFactor += obj2[`${key2}`];
+        total += obj1[key] * obj2[key2];
+        totalFactor += obj2[key2];
       }
     }
   }
@@ -145,8 +145,8 @@ const arrList = [
 
 const searchListMarkGPA = (itemList, listSub) => {
   return itemList.reduce((itemMap, item) => {
-    let markTB = Number(gpa(item.marks, listSub));
-    if (markTB >= 8) itemMap[item.name] = Number(markTB);
+    let markAvg = Number(gpa(item.marks, listSub));
+    if (markAvg >= 8) itemMap[item.name] = Number(markAvg);
     return itemMap;
   }, {});
 };
@@ -156,8 +156,8 @@ console.log(searchListMarkGPA(arrList, arraySubject));
 
 const searchMaxGPA = (itemList, listSub) => {
   const listItem = itemList.reduce((itemMap, item) => {
-    let markTB = Number(gpa(item.marks, listSub));
-    itemMap[item.name] = Number(markTB);
+    let markAvg = Number(gpa(item.marks, listSub));
+    itemMap[item.name] = Number(markAvg);
     return itemMap;
   }, {});
 
@@ -173,7 +173,7 @@ searchMaxGPA(arrList, arraySubject);
 
 const minMarks = (arr, sub) => {
   return arr.reduce(function (prev, curr) {
-    return prev.marks[`${sub}`] < curr.marks[`${sub}`] ? prev : curr;
+    return prev.marks[sub] < curr.marks[sub] ? prev : curr;
   });
 };
 console.log(minMarks(arrList, "history"));
