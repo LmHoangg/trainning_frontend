@@ -117,20 +117,137 @@
       <div class="content">
         <div class="cart">
           <div class="list-products-cart">
-              <h2>You Have 6 Items In Your Cart</h2>
+              <h2>You Have <span>6 Items</span> In Your Cart</h2>
               <div class="cart-table">
+                  <div class="cart-table-top">
+                    <ul>
+                      <li>product</li>
+                      <li>
+                        <ul class="submenu-right">
+                          <li>price</li>
+                          <li>quanlity</li>
+                          <li>total</li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="cart-item-product">
+                          <div class="cart-item-left">
+                            <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                          <img src="/SHOP_CART/images/product.png" alt="">
+                          <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                          </div>
+                          <div class="cart-item-right">
+                            <ul>
+                              <li>$35.99</li>
+                              <li><span><i class="fas fa-minus"></i></span><span>1</span><span><i class="fas fa-plus"></i></span></li>
+                              <li>$35.99</li>
+                            </ul>
+                          </div>
+                          
+                        </div>
+                      </div>
+                  </div>
+                  <div class="cart-update">
+                    <div class="cart-update-left">
+                      <div class="coupon-code">
+                         <input type="text" class="coupon-code-input" placeholder="Enter coupon Code here..."/>
+                      </div>
+                       
+                        <div><a href="#" class="btn-apply">Apply</a></div>
+                    </div>
+                    <div class="cart-update-right">
+                        <div><a href="#" class="btn-update-cart">update cart</a></div>
+                        <div><a href="#" class="btn-check-out"><i class="fas fa-check-circle"></i> Check out</a></div>
+                    </div>
+                  </div>
+              </div>
               
+              <div class="cart-caculate">
+              <div class="cart-caculate-left">
+                <h1>calculate shipping</h1>
+                <select name="" class="country">
+                  <option value="0">Select Your Country</option>
+                  <option value="1">VietNam</option>
+                  <option value="2">Australia</option>
+                  <option value="3">Japan</option>
+                  <option value="4">India</option>
+                  <option value="5">Canada</option>
+                </select>
+                <div class="state-postcode">
+                  <div class="state-country">
+                      <input class="state-country-input" type="text" placeholder="State / Country">
+                  </div>
+                  <div class="post-zip">
+                      <input type="text" class="post-zip-input" placeholder ="Postcode / Zip">
+                  </div>                
+                </div>
+              <div class="update-totals"><a class="btn-update-totals" href="#">update totals</a></div>
+              </div>
+              <div class="cart-caculate-right">
+                 <h1>cart totals</h1>
+                 <div class="subtotal">
+                   <span>subtotal</span>
+                   <span>$1285.99</span>
+                 </div>
+                 <div class="ship-hand">
+                   <span>Subtotal Shipping And Handling Total</span>
+                   <input type="radio" class="ship-option1">
+                    <label>Flat Rate: $3.88</label><br>
+                    <input type="radio" class="ship-option2">
+                    <label>Free Shipping</label><br>  
+                    <input type="radio" class="ship-option3">
+                    <label>Flat Rate: $12.99</label>
+                 </div>
+                 <div class="total">
+                   <span>total</span>
+                   <span>$2015.00</span>
+                 </div>
               </div>
           </div>
-          <div class="cart-caculate">
-
-          </div>      
+          
+           <div class="related-products">
+            <h1>You may be interested in</h1>
+            <div class="slide-products">
+              <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+               <div class="item-product">
+                <img src="/SHOP_CART/images/item-slide.png" alt="">
+                <p>Denim Classy Shorts</p>
+                <span>$35.00-$89.99</span>
+              </div>
+            </div>
         </div>
-        <div class="related-products">
-
-        </div>
+          </div> 
       </div>
-      <footer class="footer"></footer>
-    </div>
   </body>
 </html>
