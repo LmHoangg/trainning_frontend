@@ -17,8 +17,11 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./main.css" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" /> -->
+    <link rel="stylesheet" href="/SHOP_CART/souce_code/sass/main.css">
   </head>
   <body>
     <div class="wrapper">
@@ -58,7 +61,8 @@
           </div>
         </div>
         <div class="header-bottom">
-            <div class="logo">
+            <div class="header-bottom-content">
+              <div class="logo">
                 <img src="/SHOP_CART/images/logo.jpg" alt=""><span>thegem</span>
             </div>
             <div class="header-bottom-menu">
@@ -67,7 +71,7 @@
                     <li><a href="#">pages</a></li>
                     <li><a href="#">blog</a></li>
                     <li><a href="#">portfolios</a></li>
-                    <li><a href="#">shop</a></li>
+                    <li><a class="active" href="#">shop</a></li>
                     <li><a href="#">features</a></li>
                     <li><a href="#">elements</a></li>
                 </ul>
@@ -76,14 +80,56 @@
                 <ul>
                     <li><img src="/SHOP_CART/images/language.jpg"></li>
                     <li><img src="/SHOP_CART/images/search.png" alt=""></li>
-                    <li><img src="/SHOP_CART/images/cart-small.png" alt=""></li>
-                    <li><img class="rectangle-img" src="/SHOP_CART/images/rectangle.jpg" alt=""></li>
+                    <li class="cart-item"><img src="/SHOP_CART/images/cart-small.png" alt="">
+                       <img class="rectangle-img" src="/SHOP_CART/images/rectangle.jpg" alt="">
+                       <!-- <span class="rectangle-img-content">2</span> -->
+                    </li>
                 </ul>
             </div>
+            </div>
+            
         </div>
       </header>
-      <nav class="nav"></nav>
-      <div class="content"></div>
+      <nav class="nav">
+        <div class="nav-content">
+           <div class="nav-left">
+              <div class="nav-left-top">
+                    <span class="woo-cart"><strong>woo </strong> cart</span>
+              </div>
+              <div class="nav-left-bottom">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><i class="fas fa-arrow-right"></i></li>
+                    <li><a href="#">Breadcrumbs Example</a></li>
+                    <li><i class="fas fa-arrow-right"></i></li>
+                    <li><a href="#">Second Level</a></li>
+                    <li><i class="fas fa-arrow-right"></i></li>
+                    <li><a href="#">Third Level</a></li>
+                  </ul>
+              </div>
+        </div>
+        <div class="nav-right">
+            <img src="/SHOP_CART/images/SHOP_CART.png" alt="">
+        </div>
+        </div>
+       
+      </nav>
+      <div class="content">
+        <div class="cart">
+          <div class="list-products-cart">
+              <h2>You Have 6 Items In Your Cart</h2>
+              <div class="cart-table">
+              
+              </div>
+          </div>
+          <div class="cart-caculate">
+
+          </div>      
+        </div>
+        <div class="related-products">
+
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
   </body>
