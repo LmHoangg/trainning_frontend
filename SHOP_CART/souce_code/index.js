@@ -1,5 +1,4 @@
-window.addEventListener("load", function ()
-{
+window.addEventListener("load", function () {
   // numbers products in slider
   const numItemInSlide = 6;
   //list products
@@ -69,14 +68,46 @@ window.addEventListener("load", function ()
   }
 
   ///// Code collapse
-    const errorLists = document.querySelectorAll(".error-img");
-    const itemInCart = document.querySelector(".item-in-cart");
-    // console.log(typeof itemInCart.innerText);
-    let total = parseInt(itemInCart.innerText);
-    errorLists.forEach((item) => item.addEventListener("click", function (e)
-    {   
-        e.target.parentNode.parentNode.remove();
-        total--;
-        itemInCart.innerText = total.toString();
-    }))
+  const errorLists = document.querySelectorAll(".error-img");
+  const itemInCart = document.querySelector(".item-in-cart");
+  // console.log(typeof itemInCart.innerText);
+  let total = parseInt(itemInCart.innerText);
+  errorLists.forEach((item) =>
+    item.addEventListener("click", function (e) {
+      e.target.parentNode.parentNode.remove();
+      total--;
+      itemInCart.innerText = total.toString();
+    })
+  );
+  const minus = document.querySelectorAll(".minus");
+  const plus = document.querySelectorAll(".plus");
+  minus.forEach((item) =>
+    item.addEventListener("click", function (e) {
+      const nextELe = e.target.nextElementSibling;
+      let price =
+        nextELe.parentNode.parentNode.previousElementSibling.innerText;
+      let totalPrice = nextELe.parentNode.parentNode.nextElementSibling;
+
+      let quanlity = parseInt(nextELe.innerText);
+      quanlity--;
+      let caculate = (Number(price.slice(1)) * quanlity).toFixed(2);
+      if (quanlity < 0) return;
+      nextELe.innerText = quanlity;
+      totalPrice.innerText = `$${caculate}`;
+    })
+  );
+  plus.forEach((item) =>
+    item.addEventListener("click", function (e1) {
+      const preEl = e1.target.previousElementSibling;
+      let quanlityPlus = parseInt(preEl.innerText);
+      let price = preEl.parentNode.parentNode.previousElementSibling.innerText;
+      let totalPrice = preEl.parentNode.parentNode.nextElementSibling;
+
+      quanlityPlus++;
+      let caculate = (Number(price.slice(1)) * quanlityPlus).toFixed(2);
+      if (quanlityPlus > 100) return;
+      preEl.innerText = quanlityPlus;
+      totalPrice.innerText = `$${caculate}`;
+    })
+  );
 });
