@@ -77,7 +77,6 @@ postsList.addEventListener("click", function(e) {
             .then(() => location.reload());
     })
 })
-
 formPost.addEventListener("submit", function(e) {
     e.preventDefault();
     fetch(url, {
@@ -88,7 +87,6 @@ formPost.addEventListener("submit", function(e) {
             body: JSON.stringify({
                 title: titleValue.value,
                 body: bodyValue.value
-
             })
         })
         .then(response => response.json())
@@ -100,10 +98,8 @@ formPost.addEventListener("submit", function(e) {
     titleValue.value = '';
     bodyValue.value = '';
 })
-
 const close = document.querySelector(".close-post");
 close.addEventListener("click", function(e) {
-    e.preventDefault();
     container.classList.remove("isHide");
     showPost.classList.remove("isShow");
 });
