@@ -1,0 +1,17 @@
+@import "variables";
+@import "reset";
+@import "common";
+html,
+body {
+    width: 100%;
+}
+.wrapper,
+.header,
+.nav {
+    width: 100%;
+}
+@import "header";
+
+@import "nav";
+
+@import "content";

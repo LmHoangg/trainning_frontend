@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/SHOP_CART/souce_code/sass/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top-content">
+            <div class="phone">
+              <img class="phone-img" src="/SHOP_CART/images/PhoneII.png" alt=""><span>&emsp;+1 916-85-2235</span>
+            </div>         
+            <ul class="social-list">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></i></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube" style="color:red;"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+            <div class="header-top-menu">             
+              <ul class="top-menu">
+                  <li><a href="#"><i class="fas fa-chevron-right icon-top-menu"></i>My Account</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right icon-top-menu"></i>FAQ </a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right icon-top-menu"></i>Contact Us</a></li>
+                  <Li><a href="#"><i class="fas fa-chevron-right icon-top-menu"></i>Newsletter SignUp</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right icon-top-menu"></i>Shipping Terms</a></li>
+              </ul>
+              <a class="btn-header-top">
+              My Wishlist
+              </a>
+            </div>  
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-content">
+            <div class="logo">
+              <img src="/SHOP_CART/images/logo.jpg" alt="">
+              <span>thegem</span>
+            </div>          
+            <ul class="header-bottom-menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">portfolios</a></li>
+                <li><a class="active" href="#">shop</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">elements</a></li>
+            </ul>            
+            <ul class="list-module">
+                <li><img src="/SHOP_CART/images/language.jpg"></li>
+                <li><img src="/SHOP_CART/images/search.png" alt=""></li>
+                <li class="cart-item"><img src="/SHOP_CART/images/cart-small.png" alt="">
+                    <img class="rectangle-img" src="/SHOP_CART/images/rectangle.jpg" alt="">
+                </li>
+            </ul>
+          </div>          
+        </div>
+      </header>
+      <nav class="nav">
+        <div class="nav-content">
+           <div class="nav-left">
+              <div class="nav-left-top">
+                    <span class="woo-cart">
+                      <strong>woo </strong> cart
+                    </span>
+              </div>            
+              <ul class="nav-left-bottom">
+                <li><a href="#">Home</a></li>
+                <li><i class="fas fa-arrow-right"></i></li>
+                <li><a href="#">Breadcrumbs Example</a></li>
+                <li><i class="fas fa-arrow-right"></i></li>
+                <li><a href="#">Second Level</a></li>
+                <li><i class="fas fa-arrow-right"></i></li>
+                <li><a href="#">Third Level</a></li>
+              </ul>
+          </div>
+          <img src="/SHOP_CART/images/SHOP_CART.png" alt="">
+        </div>   
+      </nav>
+      <div class="content">
+        <div class="cart">
+          <div class="list-products-cart">
+              <h2>You Have <span>
+                <span class="item-in-cart">6</span> Items
+                </span> In Your Cart
+              </h2>
+              <div class="cart-table">   
+                <ul class="cart-table-top">
+                  <li>product</li>
+                  <li>
+                    <ul class="submenu-right">
+                      <li>price</li>
+                      <li>quanlity</li>
+                      <li>total</li>
+                    </ul>
+                  </li>                     
+                </ul>             
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                  <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+                </div>
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                    <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+                </div>
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                    <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+                </div>
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                    <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+                </div>
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                    <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+                </div>
+                <div class="cart-item-product">
+                  <div class="cart-item-left">
+                    <img class="error-img" src="/SHOP_CART/images/errors.png" alt="">
+                  <img src="/SHOP_CART/images/product.png" alt="">
+                  <span>Lorem ipsum dolor sit amet <span>Size: Large, Color: Black</span></span>
+                  </div>
+                  <ul class="cart-item-right">
+                    <li>$35.99</li>
+                    <li>
+                      <div class="execute">
+                          <div class="minus">-</div>
+                          <div class="quanlity">1</div>
+                          <div class="plus">+</div>
+                      </div>
+                    </li>
+                    <li class="price-total">$35.99</li>
+                  </ul>                         
+               </div>                        
+            </div>
+           </div>
+          <div class="cart-update">
+            <div class="cart-update-left">
+              <div class="coupon-code">
+                  <input type="text" class="coupon-code-input" placeholder="Enter Coupon Code Here..."/>
+              </div>
+              <div><a href="#" class="btn-apply">Apply</a></div>
+            </div>
+            <div class="cart-update-right">
+                <div><a href="#" class="btn-update-cart">update cart</a></div>
+                <div><a href="#" class="btn-check-out"><i class="fas fa-check-circle"></i> Check out</a></div>
+            </div>
+          </div>
+        </div>
+          <div class="cart-caculate">
+          <div class="cart-caculate-left">
+            <h1>calculate shipping</h1>
+            <select name="" class="country">
+              <option value="0">Select Your Country</option>
+              <option value="1">VietNam</option>
+              <option value="2">Australia</option>
+              <option value="3">Japan</option>
+              <option value="4">India</option>
+              <option value="5">Canada</option>
+            </select>
+            <div class="state-postcode">
+              <div class="state-country">
+                  <input class="state-country-input" type="text" placeholder="State / Country">
+              </div>
+              <div class="post-zip">
+                  <input type="text" class="post-zip-input" placeholder ="Postcode / Zip">
+              </div>                
+            </div>
+          <div class="update-totals"><a class="btn-update-totals" href="#">update totals</a></div>
+          </div>
+          <div class="cart-caculate-right">
+              <h1>cart totals</h1>
+              <div class="subtotal">
+                <div class="subtotal-title">
+                  <span>Subtotal</span>
+                  </div>
+                <div class="subtotal-detail"><span class="subtotal-detail-price">$1285.99</span>
+                </div>
+                </div>
+              <div class="ship-hand">
+                <div class="ship-hand-title">
+                    <span> Shipping And Handling</span>
+                </div>
+                <div class="ship-hand-description">
+                  <div class="option-ship">
+                    <input type="radio" class="ship-option1">
+                <label>Flat Rate: $ 3.88</label>
+                  </div>
+                  <div class="option-ship">
+                    <input type="radio" class="ship-option2">
+                <label>Free Shipping</label>
+                  </div>
+                  <div class="option-ship"> <input type="radio" class="ship-option3">
+                <label>Flat Rate: $ 12.99</label></div>  
+                </div>
+              
+              </div>
+              <div class="total">
+                <div class="total-title"> <span>Total</span></div>
+              <div class="total-detail"> <span>$2015.00</span></div>
+              
+              </div>
+          </div>
+      </div>
+      
+        <div class="related-products">
+        <h1>You may be interested in</h1>
+        <div class="slider">
+            <i class="fa fa-angle-left slider-prev"></i>
+            <ul class="slider-dots">
+              <li class="slider-dot-item active" data-index="0"></li>
+              <li class="slider-dot-item" data-index="1"></li>
+              <li class="slider-dot-item" data-index="2"></li>
+              <li class="slider-dot-item" data-index="3"></li>
+                <li class="slider-dot-item" data-index="4"></li>
+          </ul>
+          <div class="slider-wrapper">
+              <div class="slide-products">
+                <div class="item-product sale-new">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                  <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                  <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-product sale-new">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                  <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-product sale-new">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                  <div class="item-product-content">
+                      <p>Golden Heels</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                    <div class="item-product-content">
+                      <p>Black Impression</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                    </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                    <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                    <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                    <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                </a>
+                </div>
+                <div class="item-product">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                    <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                </a>
+                </div>
+                <div class="item-product ">
+                  <a href="#"><img src="/SHOP_CART/images/item-slide.png" alt="">
+                  <div class="item-product-content">
+                      <p>Denim Classy Shorts</p>
+                      <span>$35.00-$89.99</span>
+                    </div>
+                  </a>
+                </div>
+          </div>
+          </div>
+            <i class="fa fa-angle-right slider-next"></i>
+        </div>
+        
+    </div>
+      </div> 
+  </div>
+      <script src="index.js"></script>
+  </body>
+</html>
