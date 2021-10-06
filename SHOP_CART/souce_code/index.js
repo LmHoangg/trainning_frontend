@@ -13,7 +13,6 @@ window.addEventListener("load", function () {
 
   // width 1 product
   const sliderItemWidth = sliderItems[0].offsetWidth;
-  console.log(sliderItemWidth);
   // numbers products
   const slidesLength = sliderItems.length;
 
@@ -23,8 +22,6 @@ window.addEventListener("load", function () {
   // spacing 2 products
   const spaceItem =
     (widthSlide - numItemInSlide * sliderItemWidth) / (numItemInSlide - 1);
-
-  console.log(spaceItem);
   let positionX = 0;
   let index = 0;
   nextBtn.addEventListener("click", function () {

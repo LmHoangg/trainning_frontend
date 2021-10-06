@@ -14,23 +14,25 @@
             }
             .cart-table {
                 margin-top: 30px;
-                .cart-table-top {
+                ul.cart-table-top {
+                    @include flexBoxStyle(flex, space-between, center);
+                    list-style-type: none;
+                    flex: 1;
+                    padding: 0 40px;
                     background-color: #b6c6c9;
                     height: 60px;
-                    @include flexBoxStyle(flex, null, center);
-                    ul {
-                        @include flexBoxStyle(flex, space-between, null);
-                        list-style-type: none;
-                        flex: 1;
-                        padding: 0 40px;
-                        li {
-                            font-size: 16px;
-                            font-family: $font-extra;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            color: #ffffff;
-                            margin-left: 50px;
-                            padding: 0 8px;
+                    li {
+                        font-size: 16px;
+                        font-family: $font-extra;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #ffffff;
+                        margin-left: 50px;
+                        padding: 0 8px;
+
+                        .submenu-right {
+                            display: flex;
+                            list-style-type: none;
                         }
                     }
                 }
@@ -58,61 +60,48 @@
                             }
                         }
                     }
-                    .cart-item-right {
-                        display: flex;
+
+                    ul.cart-item-right {
+                        list-style-type: none;
                         flex: 1;
-                        justify-content: end;
                         @include flexBoxStyle(flex, end, null);
-                        ul {
-                            list-style-type: none;
-                            display: flex;
-                            margin-right: 65px;
-                            font-family: $font-main;
-                            font-size: 24px;
-                            li {
-                                padding: 0 25px;
+                        padding-right: 30px;
+                        font-family: $font-main;
+                        font-size: 24px;
+                        li {
+                            padding: 0 25px;
 
-                                .execute {
-                                    display: flex;
-                                    width: 100px;
-                                    height: 100%;
-                                    font-size: 16px;
-                                    font-family: $font-main;
+                            .execute {
+                                display: flex;
+                                width: 100px;
+                                height: 100%;
+                                font-size: 16px;
+                                font-family: $font-main;
 
-                                    .minus {
-                                        flex: 1;
-                                        @include center;
-                                        border: 1px solid #dfe5e8;
-                                        background-color: #dfe5e8;
-                                        font-size: 18px;
-                                        font-weight: 600;
-                                        
-                                      
-                                    }
-                                    .quanlity {
-                                        flex: 1;
-                                        @include center;
-                                        //  padding:0 10px;
-                                        border-top: 1px solid #dfe5e8;
-                                        border-bottom: 1px solid #dfe5e8;
-                                        background-color: #f5f7f6;
-                                    }
-                                    .plus {
-                                        flex: 1;
-                                        @include center;
-                                        border: 1px solid #dfe5e8;
-                                        background-color: #dfe5e8;
+                                .minus {
+                                    flex: 1;
+                                    @include center;
+                                    border: 1px solid #dfe5e8;
+                                    background-color: #dfe5e8;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                }
+                                .quanlity {
+                                    flex: 1;
+                                    @include center;
+                                    //  padding:0 10px;
+                                    border-top: 1px solid #dfe5e8;
+                                    border-bottom: 1px solid #dfe5e8;
+                                    background-color: #f5f7f6;
+                                }
+                                .plus {
+                                    flex: 1;
+                                    @include center;
+                                    border: 1px solid #dfe5e8;
+                                    background-color: #dfe5e8;
 
-                                        font-size: 18px;
-                                        font-weight: 600;
-                                    }
-                                    //  i {
-                                    //     font-weight: 500;
-                                    //     color: #5f727f;
-                                    //     border: 1px solid #dfe5e8;
-                                    //     width: 30px;
-                                    //     height: 30px;
-                                    // }
+                                    font-size: 18px;
+                                    font-weight: 600;
                                 }
                             }
                         }
