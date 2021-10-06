@@ -1,0 +1,78 @@
+body {
+  background-color: #b495e9;
+  color: #000;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.posts-list {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-post {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-title {
+  color: red;
+}
+
+.isShow {
+  display: block;
+  visibility: visible;
+}
+
+.isHide {
+  display: none;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.show-detail.isShow {
+  position: fixed;
+  top: 100px;
+  right: 30%;
+  border-radius: 10px;
+  min-width: 500px;
+  min-height: 500px;
+  max-width: 500px;
+  background-color: #fff;
+  overflow: scroll;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  visibility: visible;
+}
+
+.show-detail.isShow h5 {
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #474afa;
+}
+
+.show-detail.isShow .close-post {
+  color: red;
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.show-detail {
+  display: none;
+  visibility: hidden;
+}
+/*# sourceMappingURL=app.css.map */
