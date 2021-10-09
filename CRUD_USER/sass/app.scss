@@ -18,20 +18,20 @@ textarea {
 }
 
 .card-title {
-    color: red
+    color: red;
 }
 
 .isShow {
-    display: block;
-    visibility: visible;
+    display: block !important;
+    visibility: visible !important;
 }
 
 .isHide {
-    display: none;
-    visibility: hidden;
+    display: none !important;
+    visibility: hidden !important;
 }
 
-.show-detail.isShow {
+.show-detail {
     position: fixed;
     top: 100px;
     right: 30%;
@@ -42,23 +42,25 @@ textarea {
     background-color: #fff;
     overflow: scroll;
     box-sizing: border-box;
-    display: block;
-    visibility: visible;
+    display: none;
+    visibility: hidden;
     h5 {
         margin-top: 10px;
         text-align: center;
         text-transform: uppercase;
         color: rgb(71, 74, 250);
     }
-}
-
-.show-detail {
-    display: none;
-    visibility: hidden;
-}
-.close-post {
-        color: red;
-        width: 30px;
-        height: 30px;
-        float: right;
+    &-title {
+        position: relative;
+        .close-post {
+            color: red;
+            position:absolute;
+            top: 0;
+            right:0;
+            width: 30px;
+            height: 30px;       
+            cursor: pointer;
+            display: block;
+        }
+    }
 }

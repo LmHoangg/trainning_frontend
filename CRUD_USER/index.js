@@ -11,35 +11,37 @@ let postDetail = "";
 const renderPosts = (posts) => {
   posts.forEach((post) => {
     itemPost += `<div class="card col-md-12 col-lg-12 row mb-3 mt-3">
-                <div class="card-body" data-id=${post.id}>
-                    <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.body}</p>
-                    <a href="#" class="btn btn-primary" id="edit-post">Edit</a>
-                    <a href="#" class="btn btn-danger" id="delete-post">Delete</a>
-                    <a href="#" class="btn btn-success" id="show-post">Show</a>
-                </div>
-            </div>`;
+        <div class="card-body" data-id=${post.id}>
+            <h5 class="card-title">${post.title}</h5>
+            <p class="card-text">${post.body}</p>
+            <a href="#" class="btn btn-primary" id="edit-post">Edit</a>
+            <a href="#" class="btn btn-danger" id="delete-post">Delete</a>
+            <a href="#" class="btn btn-success" id="show-post">Show</a>
+        </div>
+    </div>`;
   });
   postsList.innerHTML = itemPost;
 };
 const renderPost = (post) => {
   postsList.innerHTML += `<div class="card col-md-12 col-lg-12 row mb-3 mt-3">
-                <div class="card-body" data-id=${post.id}>
-                    <h5 class="card-title">${post.title}</h5>
-                    <p class="card-text">${post.body}</p>
-                    <a href="#" class="btn btn-primary" id="edit-post">Edit</a>
-                    <a href="#" class="btn btn-danger" id="delete-post">Delete</a>
-                    <a href="#" class="btn btn-success" id="show-post">Show</a>
-                </div>
-            </div>`;
+    <div class="card-body" data-id=${post.id}>
+        <h5 class="card-title">${post.title}</h5>
+        <p class="card-text">${post.body}</p>
+        <a href="#" class="btn btn-primary" id="edit-post">Edit</a>
+        <a href="#" class="btn btn-danger" id="delete-post">Delete</a>
+        <a href="#" class="btn btn-success" id="show-post">Show</a>
+    </div>
+    </div>`;
 };
 const renderDetailPost = (post) => {
-  postDetail += `<h5>Detail post
-            <i class="fas fa-times-circle close-post"></i>
-        </h5><div class="card">
+  postDetail += `<div class="show-detail-title">
+            <h5>Detail post</h5>
+            <span class="fas fa-times-circle close-post" aria-hidden="true" id="Close"></span>
+        </div>
+        <div class="card">
             <div class="card-body">
                 <h5 class="card-title">${post.title}</h5>
-                <p class="card-text ">${post.body}</p>
+                <p class="card-text">${post.body}</p>
             </div>
         </div>`;
   showPost.innerHTML = postDetail;
@@ -100,6 +102,9 @@ postsList.addEventListener("click", function (e) {
       showPost.classList.add("isShow");
       fetch(`${url}/${id}`, {
         method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
         .then((response) => response.json())
         .then((data) => renderDetailPost(data))
@@ -123,8 +128,8 @@ formPost.addEventListener("submit", function (e) {
   titleValue.value = "";
   bodyValue.value = "";
 });
-const close = document.querySelector(".close-post");
-close.addEventListener("click", function (e) {
-  container.classList.remove("isHide");
-  showPost.classList.remove("isShow");
+const closePost = document.querySelector("#Close");
+closePost.addEventListener("click", function () {
+  document.querySelector(".container.isHide").classList.add("isShow");
+  document.querySelector(".show-detail.isShow").classList.add("isHide");
 });

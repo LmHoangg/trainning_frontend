@@ -30,16 +30,16 @@ textarea {
 }
 
 .isShow {
-  display: block;
-  visibility: visible;
+  display: block !important;
+  visibility: visible !important;
 }
 
 .isHide {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
 }
 
-.show-detail.isShow {
+.show-detail {
   position: fixed;
   top: 100px;
   right: 30%;
@@ -51,26 +51,29 @@ textarea {
   overflow: scroll;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: block;
-  visibility: visible;
+  display: none;
+  visibility: hidden;
 }
 
-.show-detail.isShow h5 {
+.show-detail h5 {
   margin-top: 10px;
   text-align: center;
   text-transform: uppercase;
   color: #474afa;
 }
 
-.show-detail {
-  display: none;
-  visibility: hidden;
+.show-detail-title {
+  position: relative;
 }
 
-.close-post {
+.show-detail-title .close-post {
   color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 30px;
   height: 30px;
-  float: right;
+  cursor: pointer;
+  display: block;
 }
 /*# sourceMappingURL=app.css.map */
