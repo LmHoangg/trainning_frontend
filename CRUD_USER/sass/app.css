@@ -37,8 +37,6 @@ textarea {
 .isHide {
   display: none;
   visibility: hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .show-detail.isShow {
@@ -64,15 +62,15 @@ textarea {
   color: #474afa;
 }
 
-.show-detail.isShow .close-post {
+.show-detail {
+  display: none;
+  visibility: hidden;
+}
+
+.close-post {
   color: red;
   width: 30px;
   height: 30px;
   float: right;
-}
-
-.show-detail {
-  display: none;
-  visibility: hidden;
 }
 /*# sourceMappingURL=app.css.map */
