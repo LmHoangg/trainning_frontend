@@ -1,0 +1,66 @@
+body {
+    background-color: #b495e9;
+    color: #000;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+.posts-list {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-post {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    color: red;
+}
+
+.isShow {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.isHide {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.show-detail {
+    position: fixed;
+    top: 100px;
+    right: 30%;
+    border-radius: 10px;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 500px;
+    background-color: #fff;
+    overflow: scroll;
+    box-sizing: border-box;
+    display: none;
+    visibility: hidden;
+    h5 {
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(71, 74, 250);
+    }
+    &-title {
+        position: relative;
+        .close-post {
+            color: red;
+            position:absolute;
+            top: 0;
+            right:0;
+            width: 30px;
+            height: 30px;       
+            cursor: pointer;
+            display: block;
+        }
+    }
+}
